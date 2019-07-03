@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    git 'https://gitlab.etf.inova.lk/root/simple-java-maven-app.git'
+    git 'https://github.com/ravialuthge/simple-java-maven-app.git'
   }
   stage('SonarQube analysis') {
     withSonarQubeEnv('SonarQube') { // You can override the credential to be used

@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    git 'https://github.com/ravialuthge/simple-java-maven-app.git'
+    git 'https://github.com/ravialuthge/simple-java-maven-app'
   }
   stage('SonarQube analysis') {
     def scannerHome = tool 'SonarQube';

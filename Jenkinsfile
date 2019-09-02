@@ -3,7 +3,6 @@ pipeline {
         docker {
             image 'maven:3-alpine'
 	    label 'docker'
-	    args '--name 10.148.0.20'
         }
     }
     options {

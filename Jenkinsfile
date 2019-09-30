@@ -30,11 +30,11 @@ pipeline {
             }
         }
     }
-	post {
-    failure {
-        mail to: 'mailstesting6@gmail.com',
-             subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-             body: "Something is wrong with ${env.BUILD_URL}"
-    }
-}
+	//post {
+    //failure {
+      //  mail to: 'mailstesting6@gmail.com',
+        //     subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+          //   body: "Something is wrong with ${env.BUILD_URL}"
+   // }
+// }
 }
